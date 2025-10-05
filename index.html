@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Link external CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <title>To do manager</title>
-  </head>
-  <body>
-    <h1>All Tsaks</h1>
-    <h5>All your tasks in one place</h5>
-    <input type="text" id="todo-input" placeholder="Add new to do..." />
-    <button id="add-btn">+</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Todo Manager</h1>
+        </header>
+
+        <main class="content">
+            <section class="todo-header">
+                <h2 id="category-title">All Tasks</h2>
+                <p>Organize your tasks by category</p>
+            </section>
+
+            <section class="todo-input">
+                <input type="text" id="todo-input" placeholder="Add a new todo...">
+                <button id="add-btn">+</button>
+            </section>
+
+            <section class="todo-list" id="todo-list">
+                <div class="empty-state">
+                    No todos yet. Add one above to get started!
+                </div>
+            </section>
+
+            <footer class="app-footer">
+                Your todos are automatically saved locally
+            </footer>
+        </main>
+    </div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
